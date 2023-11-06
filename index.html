@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Productly</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <section class="header fullscreen-bg block">
+  <section class="header">
     <div class="row">
       <div class="col-12">
-        <div class="container">
-          <div class="overlay"></div>
+        <div class="container page">
+          <div class="page-video">
+            <video class="video" loop="loop" autoplay="" muted="" poster="img/photo_bg_1.jpg">
+              <source src="video/video_bg_1.mp4" type="video/mp4" />
+              <source src="video/video_bg_1.webm" type="video/webm" />
+            </video>
+          </div>
           <div class="header-inner">
             <img src="img/logo.png" alt="Logo">
             <p>Razman Production представляет</p>
@@ -32,12 +42,8 @@
         </div>
       </div>
     </div>
-    <video loop="" muted="" autoplay="" poster="img/photo_bg_1.jpg" class="fullscreen-bg__video">
-      <source src="video/video_bg_1.mp4" type="video/mp4">
-      <source src="video/video_bg_1.webm" type="video/webm">
-  </video>
   </section>
-  <section class="when fullscreen-bg block" id="ticket">
+  <section class="when" id="ticket">
     <div class="row">
       <div class="col-12">
         <div class="container">
@@ -48,47 +54,100 @@
               <div class="label">1 декабря - 14 января</div>
             </div>
             <div class="when-content">
-              <h2>Самое новогоднее место Беларуси:</h2>
-              <p>Что Вас ожидает:</p>
+              <h2>Самое новогоднее место Беларуси!</h2>
+              <p>Уникальное рождественское пространство в центре Минска, создающее атмосферу погружения в сказку</p>
+              <h3>Что Вас ожидает:</h3>
             </div>
             <div class="when-down">
               <div class="when-card">
                 <div class="card-date">
                   <div class="date-inner">
-                    <h3>c 1 декабря по 14 января</h3>
-                    <p>иммерсивная выставка</p>
+                    <h3>Иммерсивная выставка</h3>
                   </div>
                 </div>
                 <div class="card-description">
-                  <p>Новогодние витрины и аттракционы, Рождественские развлечения и Дом Санты, снегопад и фудкорт. Меховая комната и многое другое</p>
+                  <p>Новогодние витрины и аттракционы, Рождественские развлечения и Дом Санты, снегопад и фудкорт.
+                    Меховая комната и многое другое</p>
                   <p>Стоимость билета - 27 BYN</p>
-                  <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                  <div class="card-buttons">
+                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Модальное окно -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Иммерсивная выставка</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                      <section class="vistavka">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="vistavka-inner">
+                              <div class="vistavka-info">
+                                <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
+                                  Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
+                                  городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
+                                <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
+                                  тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
+                              </div>
+                              <div class="vistavka-banner">
+                                <div class="vistavka-slider">
+                                  <div class="vistavka-slider-item">
+                                    <img src="img/vistavka.jpg" alt="">
+                                  </div>
+                                  <div class="vistavka-slider-item">
+                                    <img src="img/vistavka.jpg" alt="">
+                                  </div>
+                                  <div class="vistavka-slider-item">
+                                    <img src="img/vistavka.jpg" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="when-card">
                 <div class="card-date">
                   <div class="date-inner">
-                    <h3>c 1 декабря по 14 января</h3>
-                    <p>детские представления</p>
+                    <h3>Детские представления</h3>
                   </div>
                 </div>
                 <div class="card-description">
                   <p>сказка-представление, иммерсивная выставка, дискотека и аниматоры</p>
                   <p>Стоимость билета - 58 BYN</p>
-                  <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                  <div class="card-buttons">
+                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                    <a href="#" class="ticket-button">Подробнее</a>
+                  </div>
                 </div>
               </div>
               <div class="when-card">
                 <div class="card-date">
                   <div class="date-inner">
-                    <h3>c 1 декабря по 14 января</h3>
-                    <p>рождественские шоу</p>
+                    <h3>Рождественские шоу</h3>
                   </div>
                 </div>
                 <div class="card-description">
-                  <p>невероятная атмосфера волшебства в эффектных перфомансах при участии оркестра и хора Classic Energy</p>
+                  <p>невероятная атмосфера волшебства в эффектных перфомансах при участии оркестра и хора Classic Energy
+                  </p>
                   <p>Стоимость билета - 98 BYN</p>
-                  <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                  <div class="card-buttons">
+                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
+                    <a href="#" class="ticket-button">Подробнее</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,73 +155,172 @@
         </div>
       </div>
     </div>
-    <video loop="" muted="" autoplay="" poster="img/photo_bg_1.jpg" class="fullscreen-bg__video">
-      <source src="video/video_bg_2.mp4" type="video/mp4">
-      <source src="video/video_bg_2.webm" type="video/webm">
-  </video>
   </section>
-  <section class="place fullscreen-bg block">
+  <section class="vistavka">
+    <div class="row">
+      <div class="col-12">
+        <div class="vistavka-inner">
+          <div class="vistavka-info">
+            <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
+              Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
+              городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
+            <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
+              тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
+          </div>
+          <div class="vistavka-banner">
+            <div class="vistavka-slider">
+              <div class="vistavka-slider-item">
+                <img src="img/vistavka.jpg" alt="">
+              </div>
+              <div class="vistavka-slider-item">
+                <img src="img/vistavka.jpg" alt="">
+              </div>
+              <div class="vistavka-slider-item">
+                <img src="img/vistavka.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="shoy">
+    <div class="row">
+      <div class="col-12">
+        <div class="soy-inner">
+          <div class="shoy-content">
+            <p>Ребята станут участниками невероятной новогодней программы. Им предстоит распутать загадку исчезновения
+              Новогодней атмосферы СнегоЛэнда и Деда Мороза. А на пути их будут ждать задания, испытания, викторины и
+              челленджи с которыми они обязательно справятся.</p>
+            <p>В программе:</p>
+            <ul>
+              <li>Стилизованные новогодние ведущие;</li>
+              <li>Тренды от Барби;</li>
+              <li>Новогодний Майнкрафт челлендж;</li>
+              <li>Мультимедийные испытания;</li>
+              <li>Рулетка с подарками для каждого участника;</li>
+              <li>Банкетное меню</li>
+            </ul>
+            <button>Смотреть календарь</button>
+          </div>
+          <div class="shoy-banner">
+            <div class="shoy-slider">
+              <div class="shoy-slider-item">
+                <img src="img/shoy.jpg" alt="">
+              </div>
+              <div class="shoy-slider-item">
+                <img src="img/shoy.jpg" alt="">
+              </div>
+              <div class="shoy-slider-item">
+                <img src="img/shoy.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="prazdnik">
+    <div class="row">
+      <div class="col-12">
+        <div class="prazdnik-inner">
+          <div class="prazdnik-content">
+            <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
+              Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
+              городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
+            <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
+              тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
+            <button>Открыть календарь</button>
+          </div>
+          <div class="prazdnik-banner">
+            <div class="prazdnik-slider">
+              <div class="prazdnik-slider-item">
+                <img src="img/prazdnik.jpg" alt="">
+              </div>
+              <div class="prazdnik-slider-item">
+                <img src="img/prazdnik.jpg" alt="">
+              </div>
+              <div class="prazdnik-slider-item">
+                <img src="img/prazdnik.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="place">
     <div class="row">
       <div class="col-12">
         <div class="container">
           <div class="overlay"></div>
           <div class="place-inner">
-            <h2>Как добраться</h2>
             <div class="place-content">
               <div class="place-info">
                 <p>Ждем Вас по адресу:</p>
                 <span>Минск, ул. Козлова, 3, Дворец исскуств</span>
               </div>
               <div class="place-map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac07b33723b7c832fd2dbe9b560b2fb3a4493cb276439bbc08d8e577c8f41c9c3&amp;source=constructor" width="600" height="420" frameborder="0"></iframe>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac07b33723b7c832fd2dbe9b560b2fb3a4493cb276439bbc08d8e577c8f41c9c3&amp;source=constructor"
+                  width="600" height="420" frameborder="0"></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <video loop="" muted="" autoplay="" poster="img/photo_bg_1.jpg" class="fullscreen-bg__video">
-      <source src="video/video_bg_3.mp4" type="video/mp4">
-      <source src="video/video_bg_3.webm" type="video/webm">
-  </video>
   </section>
-  <section class="faq fullscreen-bg block">
+  <section class="faq">
     <div class="row">
       <div class="col-12">
         <div class="container">
           <div class="overlay"></div>
           <div class="faq-inner">
-            <h2>Что еще нужно знать:</h2>
+            <h2>Что еще нужно здать:</h2>
             <div class="faq-content">
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                       Элемент аккордеона #1
                     </button>
                   </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                       Элемент аккордеона #2
                     </button>
                   </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                       Элемент аккордеона #3
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just filling up the space to make it look, at
+                      least at first glance, a bit more representative of how this would look in a real-world
+                      application.</div>
                   </div>
                 </div>
               </div>
@@ -203,18 +361,17 @@
         </div>
       </div>
     </div>
-    <video loop="" muted="" autoplay="" poster="img/photo_bg_1.jpg" class="fullscreen-bg__video">
-      <source src="video/video_bg_1.mp4" type="video/mp4">
-      <source src="video/video_bg_1.webm" type="video/webm">
-  </video>
   </section>
 
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
