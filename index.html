@@ -5,14 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Productly</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>Уникальное новогоднее событие - «Дом рождества» | RAZMAN PRODUCTION</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -20,163 +17,235 @@
 </head>
 
 <body>
-  <section class="header">
+
+  <header class="header">
     <div class="row">
       <div class="col-12">
-        <div class="container page">
-          <div class="page-video">
-            <video class="video" loop="loop" autoplay="" muted="" poster="img/photo_bg_1.jpg">
-              <source src="video/video_bg_1.mp4" type="video/mp4" />
-              <source src="video/video_bg_1.webm" type="video/webm" />
-            </video>
-          </div>
+        <div class="container-fluid">
           <div class="header-inner">
-            <img src="img/logo.png" alt="Logo">
-            <p>Razman Production представляет</p>
-            <div class="anim-wrap">
-              <h1>Дом рождества</h1>
+            <div class="content">
+              <div class="top-content">
+                <img src="img/logo.png" alt="Лого">
+                <p>представляет</p>
+              </div>
+              <div class="middle-content">
+                <img src="img/main_img.png" alt="Дом рождества">
+              </div>
+              <div class="bottom-content">
+                <p>Почувствуй настоящую новогоднюю атмосферу!</p>
+                <p>2 дeкaбря — 15 января</p>
+              </div>
             </div>
-            <span>Окунись в неповторимую атмосферу новогодней сказки и волшебства</span>
-            <a href="#ticket" target="_blank" class="button header-button">Начать путешествие!</a>
+            <div class="header-nav">
+              <div class="special"></div>
+              <div class="header-nav_panel">
+                <button class="button" id="start">Начать путешествие</button>
+                <a href="https://bezkassira.by/" class="button" target="_blank" rel="nofollow">Билеты</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="when" id="ticket">
+  </header>
+
+  <section class="start">
     <div class="row">
       <div class="col-12">
-        <div class="container">
-          <div class="overlay"></div>
-          <div class="when-inner">
-            <div class="when-top">
-              <img src="img/logo.png" alt="Logo">
-              <div class="label">1 декабря - 14 января</div>
-            </div>
-            <div class="when-content">
-              <h2>Самое новогоднее место Беларуси!</h2>
-              <p>Уникальное рождественское пространство в центре Минска, создающее атмосферу погружения в сказку</p>
-              <h3>Что Вас ожидает:</h3>
-            </div>
-            <div class="when-down">
-              <div class="when-card">
-                <div class="card-date">
-                  <div class="date-inner">
+        <div class="wrapper">
+          <div class="container-fluid">
+            <div class="content">
+              <div class="all">
+                <h2>Дом Рождества  -<br> самое новогоднее место Беларуси</h2>
+                <div class="all-cards">
+                  <div class="all-cards_item">
+                    <img src="img/card_item_1.png" alt="Иммерсивная выставка">
                     <h3>Иммерсивная выставка</h3>
+                    <p>Aтмосфера сказочного рождественского города</p>
+                    <button class="button" id="exhibition">Подробнее</button>
                   </div>
-                </div>
-                <div class="card-description">
-                  <p>Новогодние витрины и аттракционы, Рождественские развлечения и Дом Санты, снегопад и фудкорт.
-                    Меховая комната и многое другое</p>
-                  <p>Стоимость билета - 27 BYN</p>
-                  <div class="card-buttons">
-                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">Подробнее</button>
+                  <div class="all-cards_item">
+                    <img src="img/card_item_2.png" alt="Детское представление">
+                    <h3>Детское представление</h3>
+                    <p>Aвторская программа, которая подарит незабываемые эмоции</p>
+                    <button class="button" id="kids">Подробнее</button>
+                  </div>
+                  <div class="all-cards_item">
+                    <img src="img/card_item_3.png" alt="Рождественское шоу">
+                    <h3>Pождественское шоу</h3>
+                    <p>Захватывающий до мурашек перформанс с живой музыкой</p>
+                    <button class="button" id="christmas">Подробнее</button>
                   </div>
                 </div>
               </div>
-
-              <!-- Модальное окно -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Иммерсивная выставка</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                    </div>
-                    <div class="modal-body">
-                      <section class="vistavka">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="vistavka-inner">
-                              <div class="vistavka-info">
-                                <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
-                                  Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
-                                  городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
-                                <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
-                                  тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
-                              </div>
-                              <div class="vistavka-banner">
-                                <div class="vistavka-slider">
-                                  <div class="vistavka-slider-item">
-                                    <img src="img/vistavka.jpg" alt="">
-                                  </div>
-                                  <div class="vistavka-slider-item">
-                                    <img src="img/vistavka.jpg" alt="">
-                                  </div>
-                                  <div class="vistavka-slider-item">
-                                    <img src="img/vistavka.jpg" alt="">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+              <div class="exhibition">
+                <h2>Иммерсивная выставка</h2>
+                <div class="exhibition-inner">
+                  <div class="exhibition-gallery">
+                    <div class="gallery-item">
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <img src="img/gallery_tab.png" alt="">
+                          </button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <img src="img/gallery_tab.png" alt="">
+                          </button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <img src="img/gallery_tab.png" alt="">
+                          </button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <img src="img/gallery_content.png" alt="">
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <img src="img/gallery_content.png" alt="">
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <img src="img/gallery_content.png" alt="">
                           </div>
                         </div>
-                      </section>
+                      </div>
+                    </div>
+                    <div class="gallery-info">
+                      <p>Уютная волшебная атмосфера, воссозданная в декорациях рождественских улочек. Свободное общение с настоящим Дедом Морозом. Впечатляющий антураж с гирляндами, ёлками, игрушками и всеми необходимыми атрибутами, чтобы каждый мог словить новогоднее настроение.</p>
+                      <p>Рождественская почта с возможностью отправить открытку реальному адресату.</p>
+                    </div>
+                  </div>
+                  <div class="exhibition-date">
+                    <img src="img/date_img.png" alt="Календарь мероприятий">
+                    <p>Cтоимость: XX рублей</p>
+                    <a href="https://bezkassira.by/" class="button" target="_blank" rel="nofollow">Kупить билет онлайн</a>
+                    <p>Или в кассах дворца</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kids">
+    <div class="row">
+      <div class="col-12">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <h2>Детское представление</h2>
+            <div class="kids-inner">
+              <div class="kids-gallery">
+                <div class="gallery-item">
+                  <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="when-card">
-                <div class="card-date">
-                  <div class="date-inner">
-                    <h3>Детские представления</h3>
-                  </div>
-                </div>
-                <div class="card-description">
-                  <p>сказка-представление, иммерсивная выставка, дискотека и аниматоры</p>
-                  <p>Стоимость билета - 58 BYN</p>
-                  <div class="card-buttons">
-                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
-                    <a href="#" class="ticket-button">Подробнее</a>
-                  </div>
+                <div class="gallery-info">
+                  <p>Юные участники авторской программы попадут в волшебное увлекательное приключение в поисках Рождества,
+                    наполненное встречами с весёлыми героями, интерактивом, неповторимыми декорациями, эффектами дополненной реальности.</p>
+                  <p>Каждый зритель станет частью захватывающего действия и побывает в сказке, эмоции от которой запомнятся надолго!</p>
                 </div>
               </div>
-              <div class="when-card">
-                <div class="card-date">
-                  <div class="date-inner">
-                    <h3>Рождественские шоу</h3>
+              <div class="kids-date">
+                <img src="img/kids_img.png" alt="Календарь мероприятий">
+                <p>Cтоимость: XX рублей</p>
+                <a href="https://bezkassira.by/" class="button" target="_blank" rel="nofollow">Kупить билет онлайн</a>
+                <p>Или в кассах дворца</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="christmas">
+    <div class="row">
+      <div class="col-12">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <h2>Рождественское шоу</h2>
+            <div class="christmas-inner">
+              <div class="christmas-gallery">
+                <div class="gallery-item">
+                  <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <img src="img/gallery_tab.png" alt="">
+                      </button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <img src="img/gallery_content.png" alt="">
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card-description">
-                  <p>невероятная атмосфера волшебства в эффектных перфомансах при участии оркестра и хора Classic Energy
-                  </p>
-                  <p>Стоимость билета - 98 BYN</p>
-                  <div class="card-buttons">
-                    <a href="https://bezkassira.by/" class="ticket-button">Купить билет</a>
-                    <a href="#" class="ticket-button">Подробнее</a>
-                  </div>
+                <div class="gallery-info">
+                  <p>Подарите себе и своим близким незабываемый подарок — эмоции от погружения в пространство, наполненное смыслом и волшебством.</p>
+                  <p>Эксклюзивное шоу от Razman Production и оркестра Classic Energy с участием артистов балета, воздушных гимнастов, хора, в дополнение с визуальными эффектами, неповторимыми номерами и продуманной до мельчайших деталей режиссурой и атмосферой — это то, что вы запомните навсегда, прикоснувшись однажды.</p>
                 </div>
               </div>
+              <div class="christmas-date">
+                <img src="img/christmas_img.png" alt="Календарь мероприятий">
+                <p>Cтоимость: XX рублей</p>
+                <a href="https://bezkassira.by/" class="button" target="_blank" rel="nofollow">Kупить билет онлайн</a>
+                <P>Или в кассах дворца</P>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="vistavka">
+
+  <section class="location">
     <div class="row">
       <div class="col-12">
-        <div class="vistavka-inner">
-          <div class="vistavka-info">
-            <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
-              Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
-              городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
-            <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
-              тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
-          </div>
-          <div class="vistavka-banner">
-            <div class="vistavka-slider">
-              <div class="vistavka-slider-item">
-                <img src="img/vistavka.jpg" alt="">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <div class="location-inner">
+              <div class="location-info">
+                <h2>Как добраться?</h2>
+                <p>Мы находимся в центре города, 5 минут от ст. местро Пл. Победы</p>
+                <p>Дворец Искусства (г. Минск, ул.Козлова 3)</p>
               </div>
-              <div class="vistavka-slider-item">
-                <img src="img/vistavka.jpg" alt="">
-              </div>
-              <div class="vistavka-slider-item">
-                <img src="img/vistavka.jpg" alt="">
+              <div class="location-map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac07b33723b7c832fd2dbe9b560b2fb3a4493cb276439bbc08d8e577c8f41c9c3&amp;width=558&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
               </div>
             </div>
           </div>
@@ -184,35 +253,37 @@
       </div>
     </div>
   </section>
-  <section class="shoy">
+
+  <section class="partners">
     <div class="row">
       <div class="col-12">
-        <div class="soy-inner">
-          <div class="shoy-content">
-            <p>Ребята станут участниками невероятной новогодней программы. Им предстоит распутать загадку исчезновения
-              Новогодней атмосферы СнегоЛэнда и Деда Мороза. А на пути их будут ждать задания, испытания, викторины и
-              челленджи с которыми они обязательно справятся.</p>
-            <p>В программе:</p>
-            <ul>
-              <li>Стилизованные новогодние ведущие;</li>
-              <li>Тренды от Барби;</li>
-              <li>Новогодний Майнкрафт челлендж;</li>
-              <li>Мультимедийные испытания;</li>
-              <li>Рулетка с подарками для каждого участника;</li>
-              <li>Банкетное меню</li>
-            </ul>
-            <button>Смотреть календарь</button>
-          </div>
-          <div class="shoy-banner">
-            <div class="shoy-slider">
-              <div class="shoy-slider-item">
-                <img src="img/shoy.jpg" alt="">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <h2>Информационные партнеры</h2>
+            <div class="partners-inner">
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
               </div>
-              <div class="shoy-slider-item">
-                <img src="img/shoy.jpg" alt="">
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
               </div>
-              <div class="shoy-slider-item">
-                <img src="img/shoy.jpg" alt="">
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
+              </div>
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
+              </div>
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
+              </div>
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
+              </div>
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
+              </div>
+              <div class="partners-item">
+                <img src="img/partner.png" alt="Партнер мероприятия">
               </div>
             </div>
           </div>
@@ -220,28 +291,17 @@
       </div>
     </div>
   </section>
-  <section class="prazdnik">
+  
+  <section class="ticket">
     <div class="row">
       <div class="col-12">
-        <div class="prazdnik-inner">
-          <div class="prazdnik-content">
-            <p>Городская выставка детского творчества «Рождественская сказка» проводится отделом по образованию
-              Витебского городского исполнительного комитета» и государственным учреждением образования «Витебский
-              городской центр дополнительного образования детей и молодежи» в декабре 2022 г. – январе 2023 г.</p>
-            <p>На выставку принимаются фотографии индивидуальных и коллективных творческих работ, соответствующих
-              тематике (Новый год, Рождество) и выполненных в различных техниках декоративно-прикладного творчества.</p>
-            <button>Открыть календарь</button>
-          </div>
-          <div class="prazdnik-banner">
-            <div class="prazdnik-slider">
-              <div class="prazdnik-slider-item">
-                <img src="img/prazdnik.jpg" alt="">
-              </div>
-              <div class="prazdnik-slider-item">
-                <img src="img/prazdnik.jpg" alt="">
-              </div>
-              <div class="prazdnik-slider-item">
-                <img src="img/prazdnik.jpg" alt="">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <div class="ticket-inner">
+              <div class="ticket-info">
+                <h2>Окунись в мир  чудес и волшебства</h2>
+                <a href="https://bezkassira.by/" class="button" target="_blank" rel="nofollow">Купить билет онлайн</a>
+                <p>Или в кассах дворца</p>
               </div>
             </div>
           </div>
@@ -249,111 +309,76 @@
       </div>
     </div>
   </section>
-  <section class="place">
-    <div class="row">
-      <div class="col-12">
-        <div class="container">
-          <div class="overlay"></div>
-          <div class="place-inner">
-            <div class="place-content">
-              <div class="place-info">
-                <p>Ждем Вас по адресу:</p>
-                <span>Минск, ул. Козлова, 3, Дворец исскуств</span>
-              </div>
-              <div class="place-map">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac07b33723b7c832fd2dbe9b560b2fb3a4493cb276439bbc08d8e577c8f41c9c3&amp;source=constructor"
-                  width="600" height="420" frameborder="0"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section class="faq">
     <div class="row">
       <div class="col-12">
-        <div class="container">
-          <div class="overlay"></div>
-          <div class="faq-inner">
-            <h2>Что еще нужно здать:</h2>
-            <div class="faq-content">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Элемент аккордеона #1
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div class="container-fluid">
+          <div class="wrapper">
+            <div class="faq-inner">
+              <h2>FAQ</h2>
+              <div class="faq-questions">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Часто задаваемый вопрос?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки.
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Элемент аккордеона #2
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                      this being filled with some actual content.</div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Часто задаваемый вопрос?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки.
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Элемент аккордеона #3
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                      exciting happening here in terms of content, but just filling up the space to make it look, at
-                      least at first glance, a bit more representative of how this would look in a real-world
-                      application.</div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Часто задаваемый вопрос?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="contacts">
-              <h2>Или свяжитесь с нами:</h2>
-              <div class="contacts-content">
-                <div class="contact-card">
-                  <h3>Звоните:</h3>
-                  <ul>
-                    <li>
-                      <a href="tel:+375336204992">+375 (33) 620-49-92</a>
-                    </li>
-                    <li>
-                      <a href="tel:+375295706731">+375 (29) 570-67-31</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="contact-card">
-                  <h3>Пишите:</h3>
-                  <ul>
-                    <li>
-                      <a href="mailto:info@christmas.by">info@christmas.by</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="contact-card">
-                  <h3>Подписывайтесь:</h3>
-                  <ul>
-                    <li>
-                      <a href="https://www.instagram.com/razman.production/">Instagram</a>
-                    </li>
-                  </ul>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapsefive">
+                        Часто задаваемый вопрос?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Часто задаваемый вопрос?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки. Ответ на вопрос на четыре строки.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -362,6 +387,50 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-12">
+        <div class="container-fluid">
+          <div class="wrapper">
+            <div class="footer-inner">
+              <div class="content">
+                <div class="footer-content_top">
+                  <div>
+                    <button id="to-top">
+                      <img src="img/logo.png" alt="Логотип">
+                    </button>
+                  </div>
+                  <div>
+                    <p>2 дeкaбря <br> 15 января</p>
+                    <p>11.00-23.00 <br> Пн-Вс</p>
+                  </div>
+                  <div>
+                    <a href="tel:+37529336204992">+375 29 620 49 92</a>
+                  </div>
+                </div>
+                <div class="footer-content_bottom">
+                  <div>
+                    <img src="img/footer_christmas.png" alt="Дом рождества">
+                  </div>
+                  <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <img src="img/insta.png" alt="Instagram">
+                      <p>domm.rp</p>
+                    </a>
+                  </div>
+                  <div>
+                    <p>Информация по билетам в кассах Дворца Искусства</p>
+                    <a href="tel:+375336204992">+375 33 620 49 92</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
